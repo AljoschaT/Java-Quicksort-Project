@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="Logo.png" alt="Logo" width="80" height="80">
+    <img src="Logo.png" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Projektarbeit Quicksort in Java</h3>
