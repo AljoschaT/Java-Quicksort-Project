@@ -19,7 +19,7 @@
 ## Index
 
 * [Über das Projekt](#über-das-projekt)
-  * [Programmiert in](#programmiert-in)
+  * [Programmiersprache](#programmiersprache)
   * [Developers](#developers)
 * [Roadmap](#roadmap)
 
@@ -28,9 +28,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Über das Projekt
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Projekt Screenshots][product-screenshot]](https://example.com)
 
-### Programmiert in
+### Programmiersprache
 
 * Java
 
