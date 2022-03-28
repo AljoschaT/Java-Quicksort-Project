@@ -38,11 +38,11 @@ public class Quicksort {
             }
 
             if (linkePosition <= rechtePosition ) {
-                int temp = liste[linkePosition];
-                liste[linkePosition] = liste[rechtePosition];
-                liste[rechtePosition] = temp;
-                linkePosition++;
-                rechtePosition--;
+                int temp = liste[linkePosition]; //Die Position links neben dem Pivot wird sich gemerkt (Als Temporäre Stelle)
+                liste[linkePosition] = liste[rechtePosition]; //Setze linke Position zur rechten Position
+                liste[rechtePosition] = temp; //Setze rechtes Element zur linken Position (Temporäres Element)
+                linkePosition++; //Linke Position um eins erhöhen
+                rechtePosition--; //Rechte Position um eins verringern
             }
         }
 
