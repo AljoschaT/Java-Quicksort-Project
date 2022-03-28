@@ -37,12 +37,21 @@ public class Quicksort {
                 rechtePosition--;
             }
 
+            /*
+            * Elemente tauschen
+            * 1. die funktion "temp" behält den linken Wert
+            * 2. Der Wert der linken Position wird auf den rechten Wert geändert
+            * 3. Der rechte Wert wird auf den Temporären linken Wert geändert
+            * 4. Auf der linken Seite wird ein Element weiter gegangen
+            * 5. Auf der rechten seite wird ein Element nach hinten verlegt
+            */
+
             if (linkePosition <= rechtePosition ) {
                 int temp = liste[linkePosition]; //Die Position links neben dem Pivot wird sich gemerkt (Als Temporäre Stelle)
-                liste[linkePosition] = liste[rechtePosition]; //Setze linke Position zur rechten Position
-                liste[rechtePosition] = temp; //Setze rechtes Element zur linken Position (Temporäres Element)
-                linkePosition++; //Linke Position um eins erhöhen
-                rechtePosition--; //Rechte Position um eins verringern
+                liste[linkePosition] = liste[rechtePosition];
+                liste[rechtePosition] = temp;
+                linkePosition++;
+                rechtePosition--;
             }
         }
 
