@@ -61,12 +61,23 @@ public class Quicksort {
 
     public  void quicksort(int liste[], final int ersteselement, final int letzteselement) {
 
+        /*
+        * Das Array wird in zwei Seiten aufgeteilt
+        * Einer linken Seite welche kleiner als das Pivot ist
+        * und einer rechten Seite, welche grösser als das Pivot ist
+        */
         int index = aufteilung(liste, ersteselement, letzteselement);
 
+        /*
+        * Die linke Seite vom Pivot wird repräsentiert
+        */
         if (ersteselement < index -1){
             quicksort(liste, ersteselement, index-1);
         }
 
+        /*
+        * Die rechte Seite vom Pivot wird repräsentiert
+        */
         if (index < letzteselement) {
             quicksort(liste, index, letzteselement);
         }
