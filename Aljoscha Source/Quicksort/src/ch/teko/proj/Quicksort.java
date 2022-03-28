@@ -12,7 +12,10 @@ public class Quicksort {
          */
         int pivot = liste[(ersteselement + letzteselement) /2];
 
+        // Setzt das erste Element in der Liste fest
         int linkePosition = ersteselement;
+
+        //Deklariert das letzte Element der Liste
         int rechtePosition = letzteselement;
 
 
