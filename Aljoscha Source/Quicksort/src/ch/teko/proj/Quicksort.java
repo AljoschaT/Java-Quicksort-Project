@@ -21,10 +21,18 @@ public class Quicksort {
 
         while (linkePosition <= rechtePosition) {
 
+            /*
+            * Solange das zu bearbeiteten Element auf der linken Seite
+            * des Picot kleiner ist, soll es die Position um eins erhöht werden
+            */
             while (liste[linkePosition] < pivot){
                 linkePosition++;
             }
 
+            /*
+            * Solange das zu bearbeiteten Element auf der rechten Seite
+            * des Picot grösser ist, soll es die Position um eins verringert werden
+            */
             while (liste[rechtePosition] > pivot) {
                 rechtePosition--;
             }
