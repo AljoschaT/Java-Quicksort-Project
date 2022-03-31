@@ -2,6 +2,8 @@ package ch.teko.proj;
 
 import java.util.Arrays;
 
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,17 +13,22 @@ public class Main {
         
         
         // Deklaration des Array's
-        int [] sortiereMich = {32, 235, 107, 106, 139, 52, 9, 24, 219, 192, 146, 191, 41, 71, 20, 127, 7, 167, 141, 5};
+        int [] sortiereMich = new int[100];
+
+        for (int i = 0; i < sortiereMich.length; i++) {
+            sortiereMich[i] = (int) (Math.random()*100); // Jedes Element erhält eine Random Zahl.
+        }
 
         /*
         * Um nicht immer die Arraylänge nachtragen zu müssen,
         * wird hier die passende Indexzahl ermittelt um es später einfügen zu können
         */
-        int arraysLaenge = sortiereMich.length - 1;  
+        int arraysLaenge = sortiereMich.length - 1;
 
 
-        System.out.println(Arrays.toString(sortiereMich)); //Gibt das unsortiere Array aus
+
+        System.out.println("Unsortiert: " + Arrays.toString(sortiereMich)); //Gibt das unsortiere Array aus
         quick.quicksort(sortiereMich, 0, arraysLaenge);
-        System.out.println(Arrays.toString(sortiereMich)); //Gibt das sortiere Array aus
+        System.out.println("Sortiert: " + Arrays.toString(sortiereMich)); //Gibt das sortiere Array aus
     }
 }
