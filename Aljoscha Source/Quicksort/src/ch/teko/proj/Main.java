@@ -11,11 +11,11 @@ public class Main {
 
 
                   
-        // Deklaration des Array's
+        // Deklaration des Random Array's 
         int [] sortiereMich = new Random().ints().limit(10).toArray();
 
 
-        // Deklaration des Array's 
+        // Deklaration des Fixen Array's 
        // int [] sortiereMich = {32, 235, 107, 106, 139, 52, 9, 24, 219, 192, 146, 191, 41, 71, 20, 127, 7, 167, 141, 5};
 
 
