@@ -10,7 +10,7 @@ public class Main {
         Quicksort quick = new Quicksort();
         int KZahl = -20; //Deklariert die kleinst mögliche Zahl
         int GZahl = 20; // Deklariert die grösst mögliche Zahl
-        int Alaenge = 10; // Deklariert die Arraylänge
+        int Alaenge = 12; // Deklariert die Arraylänge
 
         // Deklaration des Random Array's 
         int [] sortiereMich = new Random().ints(KZahl, GZahl).limit(Alaenge).toArray(); //Erstellt eine Zufälliges Array
