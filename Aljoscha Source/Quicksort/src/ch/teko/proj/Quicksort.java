@@ -1,39 +1,39 @@
 package ch.teko.proj;
 public class Quicksort {
 
-    public int aufteilung(int liste[], final int ersteselement, final int letzteselement) {
+    public int aufteilung(int liste[], final int EElement, final int LElement) {
 
         /*
          * Der Pivot wird ermittelt, in dem der Index ganz links (meist 0)
          * und der Index ganz rechts addiert und danach durch zwei geteilt werden
-         * So wird eine Median Pivot ermittelt
-         * Sollte eine ungerade Array genommen werden, wird die Zahl abgerundet
+         * so wird eine Median Pivot ermittelt
+         * sollte eine ungerade Array genommen werden, wird die Zahl abgerundet
          */
-        int pivot = liste[(ersteselement + letzteselement) /2];
+        int pivot = liste[(EElement + LElement) /2];
 
         // Setzt das erste Element in der Liste fest
-        int linkePosition = ersteselement;
+        int LPosition = EElement;
 
         //Deklariert das letzte Element der Liste
-        int rechtePosition = letzteselement;
+        int RPosition = LElement;
 
 
-        while (linkePosition <= rechtePosition) {
+        while (LPosition <= RPosition) {
 
             /*
              * Solange das zu bearbeitende Element auf der linken Seite
              * des Pivot kleiner ist, soll die Position um eins erhöht werden
              */
-            while (liste[linkePosition] < pivot){
-                linkePosition++;
+            while (liste[LPosition] < pivot){
+                LPosition++;
             }
 
             /*
              * Solange das zu bearbeitete Element auf der rechten Seite
              * des Pivot grösser ist, soll die Position um eins verringert werden
              */
-            while (liste[rechtePosition] > pivot) {
-                rechtePosition--;
+            while (liste[RPosition] > pivot) {
+                RPosition--;
             }
 
             /*
@@ -45,40 +45,40 @@ public class Quicksort {
              * 5. Auf der rechten seite wird ein Element nach hinten verlegt
              */
 
-            if (linkePosition <= rechtePosition ) {
-                int temp = liste[linkePosition]; //Die Position links neben dem Pivot wird sich gemerkt (Als Temporäre Stelle)
-                liste[linkePosition] = liste[rechtePosition];
-                liste[rechtePosition] = temp;
-                linkePosition++;
-                rechtePosition--;
+            if (LPosition <= RPosition ) {
+                int temp = liste[LPosition]; //Die Position links neben dem Pivot wird sich gemerkt (Als temporäre Stelle)
+                liste[LPosition] = liste[RPosition];
+                liste[RPosition] = temp;
+                LPosition++;
+                RPosition--;
             }
         }
 
-        return linkePosition;
+        return LPosition;
 
     }
 
-    public  void quicksort(int liste[], final int ersteselement, final int letzteselement) {
+    public  void quicksort(int liste[], final int EElement, final int LElement) {
 
         /*
          * Das Array wird in zwei Seiten aufgeteilt
          * Einer linken Seite, welche kleiner als das Pivot ist
          * und einer rechten Seite, welche grösser als das Pivot ist
          */
-        int index = aufteilung(liste, ersteselement, letzteselement);
+        int index = aufteilung(liste, EElement, LElement);
 
         /*
          * Die linke Seite vom Pivot wird repräsentiert
          */
-        if (ersteselement < index -1){
-            quicksort(liste, ersteselement, index-1);
+        if (EElement < index -1){
+            quicksort(liste, EElement, index-1);
         }
 
         /*
          * Die rechte Seite vom Pivot wird repräsentiert
          */
-        if (index < letzteselement) {
-            quicksort(liste, index, letzteselement);
+        if (index < LElement) {
+            quicksort(liste, index, LElement);
         }
     }
 
