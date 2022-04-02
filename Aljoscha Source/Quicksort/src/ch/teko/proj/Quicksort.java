@@ -1,7 +1,7 @@
 package ch.teko.proj;
 public class Quicksort {
 
-    public int aufteilung(int liste[], final int EElement, final int LElement) {
+    public int aufteilung(int[] liste, final int EElement, final int LElement) {
 
         /*
          * Der Pivot wird ermittelt, in dem der Index ganz links (meist 0)
@@ -58,7 +58,7 @@ public class Quicksort {
 
     }
 
-    public  void quicksort(int liste[], final int EElement, final int LElement) {
+    public  void quicksort(int[] liste, final int EElement, final int LElement) {
 
         /*
          * Das Array wird in zwei Seiten aufgeteilt
