@@ -8,12 +8,15 @@ public class Main {
     public static void main(String[] args) {
 
         Quicksort quick = new Quicksort();
-                  
+        int KZahl = -20; //Deklariert die kleinst mögliche Zahl
+        int GZahl = 20; // Deklariert die grösst mögliche Zahl
+        int Alaenge = 10; // Deklariert die Arraylänge
+
         // Deklaration des Random Array's 
-        int [] sortiereMich = new Random().ints().limit(10).toArray();
+        int [] sortiereMich = new Random().ints(KZahl, GZahl).limit(Alaenge).toArray(); //Erstellt eine Zufälliges Array
 
         // Deklaration des Fixen Array's 
-       // int [] sortiereMich = {32, 235, 107, 106, 139, 52, 9, 24, 219, 192, 146, 191, 41, 71, 20, 127, 7, 167, 141, 5};
+        // int [] sortiereMich = {32, 235, 107, 106, 139, 52, 9, 24, 219, 192, 146, 191, 41, 71, 20, 127, 7, 167, 141, 5};
 
         /*
          * Um nicht immer die Arraylänge nachtragen zu müssen,
