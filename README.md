@@ -28,7 +28,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Über das Projekt
 
-[![Projekt Screenshots][product-screenshot]](https://example.com)
+
 
 ### Programmiersprache
 
@@ -43,4 +43,4 @@
 <!-- ROADMAP -->
 ## Roadmap
 
-Hier entsteht eine Roadmap des Projektes
+Hier könnte die Roadmap stehen
