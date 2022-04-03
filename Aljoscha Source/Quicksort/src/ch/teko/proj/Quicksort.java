@@ -38,7 +38,7 @@ public class Quicksort {
 
             /*
              * Elemente tauschen
-             * 1. die funktion "temp" behält den linken Wert
+             * 1. Die funktion "temp" behält den linken Wert
              * 2. Der Wert der linken Position wird auf den rechten Wert geändert
              * 3. Der rechte Wert wird auf den Temporären linken Wert geändert
              * 4. Auf der linken Seite wird ein Element weiter gegangen

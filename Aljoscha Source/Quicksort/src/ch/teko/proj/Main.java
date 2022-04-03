@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
         Quicksort quick = new Quicksort();
-        int kleineZahl = -20; //Deklariert die kleinst mögliche Zahl
-        int grosseZahl = 20; // Deklariert die grösst mögliche Zahl
-        int arrayLange = 10; // Deklariert die Array länge
+        int kleineZahl = -40; //Deklariert die kleinst mögliche Zahl
+        int grosseZahl = 40; // Deklariert die grösst mögliche Zahl
+        int arrayLange = 20; // Deklariert die Array länge
 
         // Deklaration des Random Array's 
         int [] sortiereMich = new Random().ints(kleineZahl, grosseZahl).limit(arrayLange).toArray(); //Erstellung eines zufälligen Arrays
