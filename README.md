@@ -36,9 +36,10 @@
 
 ### Developers
 
+* Aljoscha Tröster
 * Andreas Niederberger
 * Riccardo Meyer
-* Aljoscha Tröster
+
 
 <!-- ROADMAP -->
 ## Roadmap
